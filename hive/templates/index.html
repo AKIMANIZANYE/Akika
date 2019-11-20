@@ -1,0 +1,545 @@
+{% load bootstrap3 %}
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'scss/main.css' %}">
+    <link rel="stylesheet" href="{% static 'scss/skin.css' %}">
+    {% endblock %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/index.js"></script>
+
+
+
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+250 787038040</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">staff@akikahive.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 social">
+                    <ul class="social_links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+                        <a class="navbar-brand" href="#">
+                            <h1>Akika-BeeHive</h1><span style="color: darkgoldenrod;">Think us as"Technology Boutique"</span></a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            
+                            <li><a href="{% url 'services' %}">Services</a></li>
+                            
+                            <li><a href="{% url 'news' %}">News</a></li>
+                            <li><a href="{% url 'faq' %}">FAQ</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                           
+
+
+                            <li class="dropdown">
+                                    <a href="#" class="dropbtn">Apply</a>
+                                    <div class="dropdown-content">
+                                    <a href="{% url 'student' %}">Students/Freelancers</a>
+                                      <a href="{% url 'business' %}">Business enterprises</a>
+                                      <a href="#">Academics/IT Schools</a>
+                                      <a href="#">Governments</a>
+                                    </div>
+                                  </li>
+
+<style>
+
+.dropdown {
+   display:inline-block;
+}
+
+.dropdown-content {
+  background: #f9f9f9;
+  min-width: 160px;
+  position: absolute;
+  display: none;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black; 
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+}
+
+.dropdown-content a:hover {
+background: darkgoldenrod;
+color:white;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+</style>
+
+
+                        </ul>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/.nav-ends -->
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('/media/banner-slide-1.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">AN <span>OPEN INNOVATION</span>
+                        CROSS-PLATFORM
+                        BRINGING TOGETHER >></h1>
+                    <p class="banner_txt">For leveraging cross capacity building between Students, Enterprises, Governments and Academics.</p>
+                    <div class="slider_btn">
+                        <button type="button" class="btn btn-default slide">Learn More <i class="fa fa-caret-right"></i></button>
+                        <button type="button" class="btn btn-primary slide">Learn More <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('/media/banner-slide-2.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Students and<span> Freelancers</span></h1>
+                    <p class="banner_txt">Boosting opportunities for students for their professional
+                        development and enhancement of their entrepreneurial skills:.</p>
+                    <div class="slider_btn">
+                        <button type="button" class="btn btn-default slide">Learn More <i class="fa fa-caret-right"></i></button>
+                        <button type="button" class="btn btn-primary slide">Learn More <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('/media/banner-slide-3.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Enterprises and <span>Businesses</span></h1>
+                    <p class="banner_txt">We are committed to looking to the future, anticipating trends and reacting accordingly!.</p>
+                    <div class="slider_btn">
+                        <button type="button" class="btn btn-default slide">Learn More <i class="fa fa-caret-right"></i></button>
+                        <button type="button" class="btn btn-primary slide">Learn More <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <div class="fill" style="background-image:url('/media/banner-slide-3.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Academics and <span>Governments</span></h1>
+                    <p class="banner_txt">We are committed to looking to the future, anticipating trends and reacting accordingly!.</p>
+                    <div class="slider_btn">
+                        <button type="button" class="btn btn-default slide">Learn More <i class="fa fa-caret-right"></i></button>
+                        <button type="button" class="btn btn-primary slide">Learn More <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Left and right controls -->
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-binoculars feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>Mission</h4>
+                        <p>Accelerate
+
+                            .
+                            
+                            job creation and
+                            entrepreneurship, and create
+                            long-term, regional economic impact
+                            by offering clients access to a broad
+                            network of specialized resources. This is
+                            accomplished through efficient,
+                            personalized growth strategies that
+                            streamline the entrepreneur’s path to
+                            
+                            success.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-laptop feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>What we are</h4>
+                        <p>We are a dynamic and vibrant community
+                            that house a variety of IT business projects
+                            supported by professional office team
+                            and excellent facilities. AKIKA Beehive is
+                            an innovation platform that connect
+                            various entities and technology in order to
+                            look for digital solutions to current
+                            business, government and social changes.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-code feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>Objectives</h4>
+                        <p>Placing Rwanda to the global ICT map ca
+                            n only e fulfilled if the economic activity in
+                            ICT sector can be increased through
+                            software export activities. Rwanda can
+                            neither be isolated from the information
+                            revolution that is happening in the World
+                            nor it can avoid the avenues obtained fro
+                            m new technologies to earn foreign
+                            currencies for the development of the
+                            country infrastructure.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="image-holder col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-left">
+            <div class="background-imgholder">
+                <img src="/media/about.png" alt="about" class="img-responsive" style="height:500px;" />
+            </div>
+        </div>
+
+        
+        <div class="container-fluid">
+
+            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner ">
+                <div class="text-block">
+                    <div class="section-heading">
+                        <h1>ABOUT <span>US</span></h1>
+                        <p class="subheading">AKIKA-BEEHIVE is a place where creative and dedicated
+                            people meet to share ideas to gather information and
+                            mostly to inspire and get inspired by other’s.</p>
+                    </div>
+
+                    <ul class="aboutul">
+                        <li> <i class="fa fa-check"></i>Fintech</li>
+                        <li> <i class="fa fa-check"></i>entrepreneurship</li>
+                        <li> <i class="fa fa-check"></i>Software programming</li>
+                        <li> <i class="fa fa-check"></i>Internet of things</li>
+                        <li> <i class="fa fa-check"></i>Cloud computing</li>
+                        <li> <i class="fa fa-check"></i>Machine learning</li>
+                        <li> <i class="fa fa-check"></i>AI Robotics</li>
+                        <li> <i class="fa fa-check"></i>Blockchains/Crypto</li>
+                        <li> <i class="fa fa-check"></i>Cyber Security</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-primary slide">Learn More  <i class="fa fa-caret-right"></i> </button>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="process">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>What <span>We Do</span></h1>
+                    <p class="subheading">Aims to develop an innovation business network that will bridge the worlds of enterprises and
+                        governments to stimulate innovation, & enrich the experience of startups in Rwanda.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-lightbulb-o feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Idea</a></h4>
+                        <p>The aim is to generate a large quantity of ideas that the team can then filter and cut down into the best, most innovative for inspiring new and better design solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-cloud-download feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Concept</a></h4>
+                        <p>The aim is to outline the background, context and need for the project, the project's objectives, expected results and resources required.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-magic feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Design</a></h4>
+                        <p>The project design phase might generate a variety of different outputs, including sketches, flowcharts, site trees, HTML screen designs, prototypes and more.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block lastchild">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-cog feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Develop</a></h4>
+                        <p>The project development aims in planning, organizing, coordinating, and controlling the resources to accomplish specific goals.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="testimonial"  class="fill" style="background-image:url('/media/testim.jpeg');">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1><span>Testimonials</span></h1>
+                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12 block ">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="/media/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Kayitesi Jacqueline</h5>
+                            <p>Akikan</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 block">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="/media/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Mbabazi Florence</h5>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 block">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="/media/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Akimanizanye Claudine</h5>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+{% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ {% bootstrap_javascript %}
+{% endblock %}
+
+</body>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
+                        </p>
+                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div>
+
+</html>

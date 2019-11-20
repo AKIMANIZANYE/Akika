@@ -1,0 +1,361 @@
+{% load bootstrap3 %}
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Apply</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'scss/main.css' %}">
+    <link rel="stylesheet" href="{% static 'scss/skin.css' %}">
+    {% endblock %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/index.js"></script>
+
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+250 787038040</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">staff@akikahive.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="social_links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+                    <a class="navbar-brand" href="#">
+                        <h1>Akika-BeeHive</h1><span>Think of us as "Technology Boutique"</span></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'services' %}">Services</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'news' %}">News</a></li>
+                        <li><a href="{% url 'faq' %}">FAQ</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                        <li class="dropdown">
+                                <a href="#" class="dropbtn">Apply</a>
+                                <div class="dropdown-content">
+                                  <a href="#">Students/Freelancers</a>
+                                  <a href="#">Business enterprises</a>
+                                  <a href="#">Academics/IT Schools</a>
+                                  <a href="#">Governments</a>
+                                </div>
+                              </li>
+
+<style>
+
+.dropdown {
+display:inline-block;
+}
+
+.dropdown-content {
+background: #f9f9f9;
+min-width: 160px;
+position: absolute;
+display: none;
+box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black; 
+padding: 5px 8px;
+text-decoration: none;
+display: block;
+text-align:left;
+}
+
+.dropdown-content a:hover {
+background: darkgoldenrod;
+color:white;
+
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+</style>
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--/.nav-ends -->
+    </header>
+
+
+
+    <section id="top_banner" style="background-image: url(/media/business.png); background-size: cover; height: 300px;  background-repeat: no-repeat;">
+            <div class="banner">
+                <div class="inner text-center">
+                    <h2>Businesses enterprises<span></span></h2>
+                </div>
+            </div>
+        </section>
+    
+
+
+    <section id="login-reg">
+            <div class="container">
+                <!-- Top content -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 forms-right-icons">
+                        <div class="section-heading">
+                            <h2>Apply here as business <span>&enterprises</span></h2>
+                            <p class="subheading">We are committed to looking to the future, anticipating trends and reacting accordingly!
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 icon"><i class="fa fa-laptop"></i></div>
+                            <div class="col-xs-10 datablock">
+                                <h4>Culture of Innovation</h4>
+                                <p>We are fostering the culture of innovations. Therefore, we are
+                                        inviting all participants who have interesting ideas and solutions,
+                                        who are enthusiastic and motivated, looking into the future, to
+                                        work with us and use the AKIKA-BEEHIVE very actively.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 icon"><i class="fa fa-laptop"></i></div>
+                            <div class="col-xs-10 datablock">
+                                <h4>Co-create and leverage</h4>
+                                <p>Akika-BeeHive will allow Enterprises working together with Academics and
+                                        Students with breakthrough ideas and will promote the settings for the develop
+                                        ment and advancement solutions and generate value for both society and
+                                        
+                                        enterprises.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 icon"><i class="fa fa-laptop"></i></div>
+                            <div class="col-xs-10 datablock">
+                                <h4>Stretching and shaping thinking</h4>
+                                <p>The process helps you to accelerate your best ideas to market,
+                                        working with your key people, stretching and shaping their
+                                        thinking, and guiding them through the phases of insight and
+                                        ideation, design and evaluation, strategy and implementation.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!--forms-right-icons-->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-box">
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Apply now</h3>
+                                    <p>Fill in the form below to get instant access</p>
+                                </div>
+                                <div class="form-top-right">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                            </div>
+                            <div class="form-bottom">
+                                <form role="form" action="" class="login-form">
+
+
+                                    <div class="input-group form-group">
+                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" placeholder="Business name" aria-describedby="basic-addon1">
+                                    </div>
+
+
+                                    <div class="input-group form-group">
+                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" placeholder="Business location" aria-describedby="basic-addon1">
+                                    </div>
+
+
+                                    <div class="input-group form-group">
+                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                        <input type="text" class="form-control" placeholder="Business email" aria-describedby="basic-addon1">
+                                    </div>
+
+
+                                    <div class="input-group form-group">
+                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                        <input type="tel" class="form-control" placeholder="Business contact No." aria-describedby="basic-addon1">
+                                    </div><br>
+
+
+                                    <div class="input-group form-group"  class="input-group-addon" id="basic-addon1">
+                                            <p>Business type</p>
+                                            <select type="text" name="level">
+                                                <option value="secondary">Services</option>
+                                                <option value="advanceddip">Financial</option>
+                                                <option value="bachelors">Security</option>
+                                                <option value="master">Transportation</option>
+                                                <option value="master">Agriculture</option>
+                                                <option value="master">Education</option>
+                              
+                                              </select>
+                                          </div>
+
+<br>
+                                 
+
+                                    <p>leave a message!</p>
+                                    <div class="input-group form-group">
+                                    <textarea rows="4" cols="70" class="form-control" placeholder="Message"></textarea>
+    
+
+                                    </div>
+                                    <button type="submit" class="btn">Apply!</button>
+                                </form>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+        </section>
+    
+
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
+                        </p>
+                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div>
+    {% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ {% bootstrap_javascript %}
+{% endblock %}
+
+
+</body>
+
+</html>
