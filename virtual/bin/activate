@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/wecode/Desktop/Akika-BeeHive/virtual"
+VIRTUAL_ENV="/home/claudine/Documents/Akika-BeeHive/virtual"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
